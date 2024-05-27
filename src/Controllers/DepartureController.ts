@@ -9,7 +9,7 @@ export const getDepartures = async (req: Request, res: Response) => {
     let coordinates: { latitude: number; longitude: number } = { latitude: 0, longitude: 0 };
 
     if (latitude && longitude) {
-        coordinates = { latitude, longitude };
+        coordinates = { latitude, longitude }; 
     } else if (address) {
         try {
             const location = await geocoder.geocode(address);

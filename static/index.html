@@ -21,7 +21,7 @@
             event.preventDefault();
             const address = document.getElementById('address').value;
             try {
-                const response = await fetch('http://localhost:3201/departures', {
+                const response = await fetch('http://localhost:3301/departures', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
